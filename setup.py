@@ -1,6 +1,10 @@
 import setuptools
 import os
 
+install_requires = [
+	"PyQt5>=5.13",
+]
+
 with open('README.md', 'r') as fh:
 	long_description = fh.read()
 
@@ -20,6 +24,7 @@ setuptools.setup(
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url=about["__url__"],
+	install_requires=install_requires,
 	packages=packages,
 	package_dir={'flakewatcher': 'flakewatcher'},
 	classifiers=[
