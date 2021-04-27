@@ -16,7 +16,7 @@ class Ui_MainWindow(object):
 		MainWindow.setObjectName("MainWindow")
 		MainWindow.resize(775, 644)
 		self.FlakeOutput = QtWidgets.QLabel(MainWindow)
-		self.FlakeOutput.setGeometry(QtCore.QRect(10, 60, 761, 571))
+		self.FlakeOutput.setGeometry(QtCore.QRect(10, 60, 751, 571))
 		font = QtGui.QFont()
 		font.setFamily("Noto Mono")
 		self.FlakeOutput.setFont(font)
