@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'ui/main.ui'
+# Form implementation generated from reading ui file 'flakewatcher/ui_xml/main.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -18,7 +18,11 @@ class Ui_MainWindow(object):
 		self.FlakeOutput = QtWidgets.QLabel(MainWindow)
 		self.FlakeOutput.setGeometry(QtCore.QRect(10, 60, 761, 571))
 		self.FlakeOutput.setText("")
+		self.FlakeOutput.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
 		self.FlakeOutput.setObjectName("FlakeOutput")
+		self.StartButton = QtWidgets.QPushButton(MainWindow)
+		self.StartButton.setGeometry(QtCore.QRect(350, 0, 86, 34))
+		self.StartButton.setObjectName("StartButton")
 
 		self.retranslateUi(MainWindow)
 		QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -26,3 +30,4 @@ class Ui_MainWindow(object):
 	def retranslateUi(self, MainWindow):
 		_translate = QtCore.QCoreApplication.translate
 		MainWindow.setWindowTitle(_translate("MainWindow", "flakewatcher"))
+		self.StartButton.setText(_translate("MainWindow", "Start"))
