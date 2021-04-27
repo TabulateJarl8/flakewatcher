@@ -1,0 +1,8 @@
+__title__ = "flakewatcher"
+__description__ = "QT5 GUI to monitor the current state of various flaker programs."
+__url__ = "https://github.com/TabulateJarl8/flakewatcher"
+__version__ = "0.1.0"
+__author__ = "Tabulate"
+__author_email__ = "tabulatejarl8@gmail.com"
+__license__ = "MIT"
+__copyright__ = "Copyright 2021 Connor Sample"
