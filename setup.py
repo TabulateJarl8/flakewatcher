@@ -25,6 +25,11 @@ setuptools.setup(
 	long_description_content_type="text/markdown",
 	url=about["__url__"],
 	install_requires=install_requires,
+	entry_points={
+		'console_scripts': [
+			'flakewatcher = flakewatcher.main:startQtApp'
+		]
+	},
 	packages=packages,
 	package_dir={'flakewatcher': 'flakewatcher'},
 	classifiers=[
@@ -38,4 +43,5 @@ setuptools.setup(
 		"Operating System :: OS Independent",
 	],
 	python_requires='>=3.6',
+	include_package_data=True
 )

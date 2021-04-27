@@ -1,10 +1,14 @@
 import sys
-from PyQt5.QtWidgets import QApplication, QMainWindow
-from PyQt5.QtCore import QProcess
-from ui.ui_main import Ui_MainWindow
-import subprocess
 import time
 import logging
+
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtCore import QProcess
+
+try:
+	from ui.ui_main import Ui_MainWindow
+except ModuleNotFoundError:
+	from .ui.ui_main import Ui_MainWindow
 
 # logging.basicConfig(level=logging.INFO)
 logging.basicConfig(level=logging.DEBUG)
@@ -52,8 +56,11 @@ class FlakeWatcherMain(QMainWindow, Ui_MainWindow):
 		err = self.process.readAllStandardError().data().decode().strip()
 		logging.warning(err)
 
-if __name__ == '__main__':
+def startQtApp():
 	app = QApplication(sys.argv)
 	window = FlakeWatcherMain()
 	window.show()
 	sys.exit(app.exec_())
+
+if __name__ == '__main__':
+	startQtApp()
