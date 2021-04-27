@@ -5,6 +5,10 @@ install_requires = [
 	"PyQt5>=5.13",
 ]
 
+extras_require = {
+	'all': ['flake8', 'pyflakes']
+}
+
 with open('README.md', 'r') as fh:
 	long_description = fh.read()
 
@@ -25,6 +29,7 @@ setuptools.setup(
 	long_description_content_type="text/markdown",
 	url=about["__url__"],
 	install_requires=install_requires,
+	extras_require=extras_require,
 	entry_points={
 		'console_scripts': [
 			'flakewatcher = flakewatcher.main:startQtApp'

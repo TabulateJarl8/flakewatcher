@@ -22,6 +22,14 @@
      <height>571</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Noto Mono</family>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #1E1E1E; color: #D3D7CF;</string>
+   </property>
    <property name="text">
     <string/>
    </property>
